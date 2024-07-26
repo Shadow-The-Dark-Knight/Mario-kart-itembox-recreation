@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: gray;
+   background-color: gray;
 }
 
 .container {
@@ -30,10 +30,25 @@ section {
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .item-box-container img {
     height: 100px;
     width: 100px;
+    animation-name: randomBox;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    direction: normal;
+    animation-fill-mode: both;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+@keyframes randomBox {
+   50% {
+    transform: translate(0%, 30%); 
+    rotate: 45deg;  
+   }
 }
